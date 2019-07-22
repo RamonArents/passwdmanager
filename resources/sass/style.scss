@@ -1,0 +1,129 @@
+body{
+  background-color:#ed7d15;
+}
+h2{
+  position: absolute;
+  font-size:1.5em;
+}
+.navbar{
+  background-color:#212529;
+}
+.navbar a{
+  color:white !important;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  padding-right: 20px;
+  color:black;
+}
+.insert-edit-form{
+  background-color:#212529;
+  padding:10px;
+  color:white;
+}
+.submitbutton{
+  float:right;
+}
+.fa-search{
+  margin-top:-33px;
+}
+.crud-buttons a{
+  padding:3px;
+  color:#212529;
+}
+.card-header{
+  background-color:white;
+  border-radius:0px;
+  border:none;
+}
+.card{
+  margin-top:30px;
+  background-color:#4286f4;
+  border:none;
+  box-shadow: 5px 10px;
+  border-radius:0px;
+}
+.card label{
+  color:white;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+#search{
+  border-radius: 0px;
+  border:none;
+  height:50px;
+}
+.searchitems li{
+  margin-top:10px;
+  background-color:#212529;
+}
+.searchitems a{
+  color:white;
+}
+.links-login li{
+  display:inline-block;
+  margin:-10px;
+}
+.links-login a:active{
+   background-color:white;
+   color:black;
+ }
+.links-login a:hover{
+  background-color:#4286f4;
+  color:white;
+}
+.links-logout li:hover{
+  background-color:#4286f4;
+  color:white;
+}
+.links-logout li{
+  display:inline-block;
+  margin:3px;
+  padding:5px;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  font-size:15px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius:100%;
+  background-color:white;
+  height:50px;
+  width:50px;
+}
+.forgotlink{
+  color:white;
+  font-size:16px;
+}
+.forgotlink:hover{
+  color:white;
+}
+.modal-content{
+  padding: 5px;
+  background-color:#4286f4;
+}
+.modal-content p{
+  color:white;
+}
+.alert-success{
+  background-color: #4286f4;
+  color: white;
+  border: none;
+}
+.alert-danger{
+  color: white;
+  background-color: #ed6844;
+  border:none;
+}
+
