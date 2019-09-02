@@ -2,17 +2,20 @@
 
 namespace App\Notifications;
 
+use http\Env\Request;
+use http\Message;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 
-class ResetPassword extends Notification
+class ResetPassword extends Notification implements ShouldQueue
 {
 
-    use Queueable;
+    use Queueable, SerializesModels;
 
     public $token;
 
@@ -45,8 +48,9 @@ class ResetPassword extends Notification
      */
     public function toMail($notifiable)
     {
+
         return (new MailMessage)
-                    ->from('ramonspasswordmanager@gmail.com')
+                    ->from('ramonarents50@gmail.com')
                     ->subject('Reset Password')
                     ->greeting('Hello ' . $notifiable->name)
                     ->line('You are receiving this email because we received a password reset request for your account.')

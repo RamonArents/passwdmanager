@@ -52,7 +52,7 @@ class PassWordController extends Controller
         $password->user_id = $id;
         $password->save();
 
-        return redirect('/viewinsert')->with('success', 'Your password successfully saved.');
+        return redirect('/viewinsert')->with('success', 'Your password was successfully saved.');
 
     }
 
