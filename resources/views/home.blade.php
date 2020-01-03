@@ -22,7 +22,7 @@
                             <h2>{{ $password->name }}</h2>
                             <div class="float-right crud-buttons">
                                 <a href="{{ route('viewedit',  ['id' => $password->id]) }}"><span class="fas fa-pen"></span></a>
-                                <span class="fa fa-fw fa-trash cursor-pointer" data-toggle="modal" data-target="#myModal"></span>
+                                <span class="fa fa-fw fa-trash cursor-pointer" data-toggle="modal" data-target="#myModal{{ $password->id }}"></span>
                             </div>
                         </div>
 
